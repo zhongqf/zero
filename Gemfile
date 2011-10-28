@@ -30,9 +30,52 @@ end
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "capybara", :group => [:development, :test]
+
+group :test, :development do
+  gem 'rails-footnotes', :git => "git://github.com/zhongqf/rails-footnotes.git"
+  gem "rails3-generators", :git => "git://github.com/zhongqf/rails3-generators.git"
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+
+  gem "capybara"
+  gem "rspec-rails", ">= 2.0.1"
+  gem "pry"
+  gem "steak"
+  gem "factory_girl_rails"
+  gem 'database_cleaner'
+  gem "timecop"
+  gem "faker"
+  gem "rcov"
+  gem "launchy"
+  gem 'spork', '>= 0.9.0.rc9'
+  gem 'shoulda-matchers'
+
+  gem 'guard-spork'
+  gem "guard-bundler"
+  gem "guard-rspec"
+  gem 'rb-fsevent'
+  gem 'growl'
+end
+
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'choices', :git => "git://github.com/teambox/choices.git"
+gem 'simple_form', :git => "git://github.com/plataformatec/simple_form.git"
+gem "will_paginate", :git=>"git://github.com/mislav/will_paginate.git", :branch=>"rails3"
+
+gem 'immortal', '~> 1.0.5'
 gem "jquery-rails"
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
 gem "haml", ">= 3.0.0"
 gem "slim"
 gem "slim-rails"
+gem 'paperclip'
+gem 'show_for'
+gem "inherited_resources"
+
