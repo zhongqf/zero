@@ -20,3 +20,4 @@ pickle-email-*.html
 *.esproj/
 .powenv
 .rvmrc
+/plusone
