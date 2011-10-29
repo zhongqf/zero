@@ -14,6 +14,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'less-rails-bootstrap'
 end
 
 
@@ -78,4 +79,6 @@ gem "slim-rails"
 gem 'paperclip'
 gem 'show_for'
 gem "inherited_resources"
+
+
 
